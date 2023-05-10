@@ -10,7 +10,7 @@ pipeline {
     stage('Checkout') {
       agent any
       steps {
-        git branch: 'main', url: 'https://github.com/jhkim-09/test.git'
+        git branch: 'main', url: 'https://github.com/jhkim-09/busan.git'
       }
     }
     stage('Build') {
