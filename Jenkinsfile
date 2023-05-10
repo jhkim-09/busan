@@ -53,7 +53,7 @@ pipeline {
     stage('Run Docker Container') {
         agent any
         steps {
-            sh 'docker -H tcp://192.168.56.10:2375 container run -d --name myweb -p 80:8080 $imageName:$BUILD_NUMBER'
+            sh "docker -H tcp://192.168.56.10:2375 container run -d --name myweb -p 80:8080 $imageName:latest"
         }
     }
   }
