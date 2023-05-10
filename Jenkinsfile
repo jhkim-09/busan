@@ -2,7 +2,7 @@ pipeline {
   agent none
 
   environment {
-    registry = "index.docker.io/v1/"
+    registry = "https://index.docker.io/v1/"
     imageName = "kimjuhyo/test-cicd"
   }
 
