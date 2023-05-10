@@ -3,7 +3,7 @@ pipeline {
 
   environment {
     registry = "index.docker.io/v1/"
-    imageName = "kimjuhyo/docker-cicd-tomcat-test"
+    imageName = "kimjuhyo/test-cicd"
   }
 
   stages {
